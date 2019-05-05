@@ -53,6 +53,16 @@ des_ftp.cwd(DES_DIR)
 
 #%%
 def img_transport(img, ftp, des_ftp):
+  '''
+  transport img from source foleder to destination folder, without explicit 
+  saving them to the hard disk, only in the memory buffer:
+  Input:
+    img: file name in source ftp; 
+    ftp: source ftp directory; 
+    des_ftp: destination ftp directory;
+  Output: 
+    the transport is successed or not  
+  '''
   try:
     bio = io.BytesIO()
     
